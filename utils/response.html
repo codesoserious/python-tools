@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Compare Result :
+<style>
+    table, table tr th, table tr td {
+        border: 1px solid #ccc;
+    }
+
+    table {
+        width: 200px;
+        border-collapse: collapse;
+    }
+</style>
+<table border="1xp ">
+    {% for foo in result %}
+    <tr>
+        <td>{{ foo["key"] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
