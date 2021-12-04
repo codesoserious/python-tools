@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+
 import requests as request
 
 """
@@ -18,3 +20,4 @@ if __name__ == '__main__':
         print(type(resp.status_code))
         print(f"百度请求状态码:{resp.status_code}%s", resp.status_code)
         print(resp.content)
+        print(os.getcwd() + '\odtest\ ' + ".htm")

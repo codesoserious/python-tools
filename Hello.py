@@ -1,8 +1,10 @@
 import math
+import os
 from decimal import Decimal
 
 from ListType import ListType
 from WeekEnum import WeekEnum
+from table import customer_table as ct, customer_table
 
 init = "aa"
 print(f"hello world {init}")
@@ -20,6 +22,18 @@ print(f"\\ 100 \" '")
 
 ss = ListType()
 dec = Decimal()
+
+
+def to_list(str):
+    if str == '1234':
+        return str + "ok"
+
+
+ids = '1234,12121,1212'
+listsr = map(to_list, ids.split(','))
+print(filter(None, list(listsr)))
+
+ct.loop_method()
 
 
 # ss.name = "111"
@@ -52,3 +66,4 @@ string = "12121"
 if isinstance(string, str):
     print(f"{string}前三位是" + string[:3])
 input('Press Enter to exit…')
+customer_table.loop_method()
